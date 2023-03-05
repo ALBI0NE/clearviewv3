@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clearviewv3/static/css/main.b5206bee.css",
+    "main.js": "/clearviewv3/static/js/main.10b49b4e.js",
+    "static/media/doctorimage.png": "/clearviewv3/static/media/doctorimage.419c77edc23615da7e5c.png",
+    "static/media/logovAR1.png": "/clearviewv3/static/media/logovAR1.6c3060836eceb2256260.png",
+    "index.html": "/clearviewv3/index.html",
+    "main.b5206bee.css.map": "/clearviewv3/static/css/main.b5206bee.css.map",
+    "main.10b49b4e.js.map": "/clearviewv3/static/js/main.10b49b4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5206bee.css",
+    "static/js/main.10b49b4e.js"
+  ]
+}
