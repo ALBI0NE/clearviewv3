@@ -91,7 +91,6 @@ header .nav-btn {
   flex-direction: column;
   align-items: center;
   width: 50%;
-  height: 50vh;
 }
 
 .right-section {
@@ -179,7 +178,7 @@ header .nav-btn {
 
 .panels-wrapper {
   display: flex;
-  width: 70%;
+  width: 80%;
   align-items: center;
   gap: 5rem;
   justify-content: center;
@@ -195,7 +194,7 @@ header .nav-btn {
 }
 
 .panel {
-  width: 400px;
+  width: 470px;
   height: 560px;
   border-radius: 50px;
 }
@@ -213,7 +212,7 @@ header .nav-btn {
   gap: 2rem;
   padding-left: 3rem;
   align-items: center;
-  padding-bottom: 1.5rem;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .panel-top h3 {
@@ -231,11 +230,11 @@ header .nav-btn {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 1.5rem;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .panel-middle p {
-  max-width: 270px;
+  max-width: 370px;
   font-size: 20px;
 }
 
@@ -243,6 +242,7 @@ header .nav-btn {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 1rem 1rem 1rem;
 }
 .panel-bottom button {
   background-color: var(--blue);
@@ -253,4 +253,30 @@ header .nav-btn {
   font-weight: bold;
   border: none;
   cursor: pointer;
+}
+
+.wrapper {
+  width: 750px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  padding: 2.5rem;
+  background: var(--light-blue);
+}
+
+.item {
+  animation: animate 25s alternate linear infinite;
+}
+
+.wrapper:hover .item {
+  animation-play-state: paused;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1100px, 0, 0);
+  }
 }

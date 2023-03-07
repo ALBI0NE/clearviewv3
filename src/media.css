@@ -1,10 +1,4 @@
 @media screen and (max-width: 1330px) {
-  .left-section h1 {
-    font-size: 64px;
-  }
-  .left-section p {
-    font-size: 24px;
-  }
   .left-section {
     padding-left: 4rem;
   }
@@ -18,8 +12,23 @@
   .Booking-btn {
     width: 230px;
   }
-  .second-section {
-    display: none;
+  .nav-right {
+    padding-right: 2rem;
+  }
+  .nav ul {
+    gap: 1rem;
+  }
+  .left-section h1 {
+    font-size: 64px;
+  }
+  .left-section p {
+    font-size: 24px;
+  }
+  .panel-bottom button {
+    width: 200px;
+  }
+  .panel-middle p {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 1215px) {
@@ -37,15 +46,6 @@
   }
 }
 @media screen and (max-width: 1090px) {
-  .left-section h1 {
-    font-size: 48px;
-  }
-  .left-section p {
-    font-size: 20px;
-  }
-  .left-section {
-    padding-left: 4rem;
-  }
   .right-section {
     padding-right: 4rem;
   }
@@ -57,8 +57,30 @@
     width: 190px;
     font-size: 14px;
   }
-  .button-section {
-    justify-content: space-between;
+
+  .left-section h1 {
+    font-size: 48px;
+  }
+  .left-section p {
+    font-size: 20px;
+  }
+  .panel-bottom button {
+    font-size: 18px;
+    width: 160px;
+  }
+  .panel-bottom,
+  .panel-middle,
+  .panel-top {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  .panel-middle p {
+    font-size: 14px;
+  }
+  .panels-wrapper {
+    width: 90%;
+  }
+  .panel {
+    height: 440px;
   }
 }
 @media screen and (max-width: 870px) {
@@ -70,6 +92,39 @@
   }
   .nav ul {
     gap: 0.4rem;
+  }
+  .img-holder {
+    width: 440px;
+  }
+  .panels-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .panel-top {
+    display: inline-flex;
+    width: 100%;
+    gap: 2rem;
+    padding-left: 3rem;
+    align-items: center;
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
+  .panel-middle p {
+    max-width: 370px;
+    font-size: 20px;
+  }
+  .panel-bottom button {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  .panel {
+    height: 415px;
+    width: 395px;
   }
 }
 
@@ -130,10 +185,11 @@
     display: flex;
     justify-content: center;
   }
-
+  .first-section {
+    margin-top: 4rem;
+  }
   .left-section h1 {
     text-align: center;
-    font-size: 48px;
   }
   .left-section p {
     text-align: center;
@@ -142,9 +198,7 @@
   }
   .left-section {
     padding: 0 2rem 0 2rem;
-
     width: 100%;
-    height: 35vh;
   }
   .right-section {
     display: none;
@@ -158,11 +212,13 @@
   .button-section {
     justify-content: space-between;
   }
+  .second-section h2 {
+    font-size: 54px;
+  }
 }
 @media screen and (max-width: 550px) {
   .left-section h1 {
     text-align: center;
-    font-size: 48px;
   }
   .left-section p {
     text-align: center;
@@ -171,7 +227,6 @@
   }
   .left-section {
     padding: 0 2rem 0 2rem;
-
     width: 100%;
   }
   .right-section {
@@ -179,8 +234,23 @@
   }
   .LearnMore-btn,
   .Booking-btn {
-    width: 180px;
+    width: 140px;
     height: 44px;
     font-size: 12px;
+  }
+  .panel {
+    height: 375px;
+    width: 335px;
+  }
+  .panel-top {
+    display: inline-flex;
+    width: 100%;
+    gap: 2rem;
+    padding-left: 3rem;
+    align-items: center;
+    padding: 0.3rem 0.3rem 0.5rem 0.3rem;
+  }
+  .panel-middle p {
+    font-size: 16px;
   }
 }
