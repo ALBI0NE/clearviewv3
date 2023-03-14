@@ -1,26 +1,37 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import brandLogo from "../img/logotest.png";
+import Carousel from "react-bootstrap/Carousel";
 
-const logos = [brandLogo, brandLogo, brandLogo, brandLogo, brandLogo];
-
-export default function Awards() {
-  const [logoArray, setLogoArray] = useState(logos);
-  const [currentLogoPosition, setCurrentLogoPosition] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentLogoPosition((currentLogoPosition + 1) % logoArray.length);
-    }, 5000); // change the logo every 5 seconds (5000 milliseconds)
-
-    return () => clearInterval(interval);
-  }, [currentLogoPosition, logoArray.length]);
+function Awards() {
+  const brands = [
+    { id: 1, url: brandLogo },
+    { id: 2, url: brandLogo },
+    { id: 3, url: brandLogo },
+    { id: 4, url: brandLogo },
+    { id: 5, url: brandLogo },
+    { id: 6, url: brandLogo },
+    { id: 7, url: brandLogo },
+  ];
 
   return (
-    <div>
-      <img
-        src={logoArray[currentLogoPosition]}
-        alt={`Logo ${currentLogoPosition + 1}`}
-      />
-    </div>
+    <>
+      <div className='third-section'>
+        <h2>LOOOG</h2>
+        <Carousel>
+          <Carousel.Item>
+            {brands.map((brand) => (
+              <img key={brand.id} src={brand.url} className='img test' />
+            ))}
+          </Carousel.Item>
+          <Carousel.Item>
+            {brands.map((brand) => (
+              <img key={brand.id} src={brand.url} />
+            ))}
+          </Carousel.Item>
+        </Carousel>
+      </div>
+    </>
   );
 }
+
+export default Awards;

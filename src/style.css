@@ -195,7 +195,7 @@ header .nav-btn {
 
 .panel {
   width: 470px;
-  height: 560px;
+  height: 540px;
   border-radius: 50px;
 }
 
@@ -255,28 +255,11 @@ header .nav-btn {
   cursor: pointer;
 }
 
-.wrapper {
-  width: 750px;
-  margin: 0 auto;
-  display: flex;
-  overflow: hidden;
-  padding: 2.5rem;
-  background: var(--light-blue);
+.third-section {
+  margin-top: 3rem;
+  margin-bottom: 100rem;
 }
 
-.item {
-  animation: animate 25s alternate linear infinite;
-}
-
-.wrapper:hover .item {
-  animation-play-state: paused;
-}
-
-@keyframes animate {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-1100px, 0, 0);
-  }
+.slide {
+  width: 1200px;
 }
