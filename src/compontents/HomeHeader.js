@@ -9,15 +9,14 @@ export default function HomeHeader() {
   }, []);
 
   return (
-    <div className='first-section'>
+    <div className='home-section'>
       <div className='left-section'>
         <h1>TRUST THE BEST DOCTORS</h1>
         <p>
-          Maecenas a placerat purus, sit amet consequat nisi. Integer sit amet
-          ligula et ligula fermentum tempus. Phasellus eget sapien ipsum.
-          Phasellus ut purus quis sem ornare consectetur vitae vel massa.
-          Vestibulum condimentum erat eget sem ornare, tristique semper purus
-          rhoncus. Praesent ullamcorper neque ut tortor gravida lobortis.
+          At ClearView Optic, our team of the best doctors prioritize your
+          vision health. Trust us to use the latest technology and techniques
+          for accurate diagnoses and effective treatments. Choose the best for
+          your eyesight and entrust your vision to our skilled professionals.
         </p>
         <div className='button-section'>
           <button className='LearnMore-btn'>LEARN MORE</button>

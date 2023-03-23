@@ -1,37 +1,32 @@
-import React, { useState, useEffect } from "react";
-import brandLogo from "../img/logotest.png";
-import Carousel from "react-bootstrap/Carousel";
+import React from "react";
+import investorAwards from "../img/investorAwards.png";
+import dxaAwards from "../img/dxaAwards.png";
+import opticianAwarrds from "../img/opticianAwarrds.png";
+import ukcxaAwards from "../img/ukcxaAwards.png";
+import herosAwards from "../img/herosAward.jpg";
 
-function Awards() {
-  const brands = [
-    { id: 1, url: brandLogo },
-    { id: 2, url: brandLogo },
-    { id: 3, url: brandLogo },
-    { id: 4, url: brandLogo },
-    { id: 5, url: brandLogo },
-    { id: 6, url: brandLogo },
-    { id: 7, url: brandLogo },
+const Awards = () => {
+  const awardsLogos = [
+    investorAwards,
+    dxaAwards,
+    opticianAwarrds,
+    ukcxaAwards,
+    herosAwards,
   ];
 
   return (
     <>
-      <div className='third-section'>
-        <h2>LOOOG</h2>
-        <Carousel>
-          <Carousel.Item>
-            {brands.map((brand) => (
-              <img key={brand.id} src={brand.url} className='img test' />
+      <div className='awards-section'>
+        <div className='awards-container'>
+          <div className='awards-items'>
+            {awardsLogos.map((logo, index) => (
+              <img key={index} src={logo} alt={`Award logo ${index}`} />
             ))}
-          </Carousel.Item>
-          <Carousel.Item>
-            {brands.map((brand) => (
-              <img key={brand.id} src={brand.url} />
-            ))}
-          </Carousel.Item>
-        </Carousel>
+          </div>
+        </div>
       </div>
     </>
   );
-}
+};
 
 export default Awards;
