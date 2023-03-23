@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.6bf989f0.css",
-    "main.js": "/static/js/main.3d994e2a.js",
-    "static/media/ukcxaAwards.png": "/static/media/ukcxaAwards.9117bbaa84ff65952ef7.png",
-    "static/media/doctorimage.png": "/static/media/doctorimage.419c77edc23615da7e5c.png",
-    "static/media/opticianAwarrds.png": "/static/media/opticianAwarrds.1950e6e0536c23e51851.png",
-    "static/media/investorAwards.png": "/static/media/investorAwards.a3d56375edab22124a62.png",
-    "static/media/dxaAwards.png": "/static/media/dxaAwards.73b014320a950552cde6.png",
-    "static/media/logovAR1.png": "/static/media/logovAR1.6c3060836eceb2256260.png",
-    "static/media/herosAward.jpg": "/static/media/herosAward.b93286932793092fa57f.jpg",
-    "index.html": "/index.html",
-    "main.6bf989f0.css.map": "/static/css/main.6bf989f0.css.map",
-    "main.3d994e2a.js.map": "/static/js/main.3d994e2a.js.map"
+    "main.css": "/clearviewv3/static/css/main.6bf989f0.css",
+    "main.js": "/clearviewv3/static/js/main.a05fb4b3.js",
+    "static/media/ukcxaAwards.png": "/clearviewv3/static/media/ukcxaAwards.9117bbaa84ff65952ef7.png",
+    "static/media/doctorimage.png": "/clearviewv3/static/media/doctorimage.419c77edc23615da7e5c.png",
+    "static/media/opticianAwarrds.png": "/clearviewv3/static/media/opticianAwarrds.1950e6e0536c23e51851.png",
+    "static/media/investorAwards.png": "/clearviewv3/static/media/investorAwards.a3d56375edab22124a62.png",
+    "static/media/dxaAwards.png": "/clearviewv3/static/media/dxaAwards.73b014320a950552cde6.png",
+    "static/media/logovAR1.png": "/clearviewv3/static/media/logovAR1.6c3060836eceb2256260.png",
+    "static/media/herosAward.jpg": "/clearviewv3/static/media/herosAward.b93286932793092fa57f.jpg",
+    "index.html": "/clearviewv3/index.html",
+    "main.6bf989f0.css.map": "/clearviewv3/static/css/main.6bf989f0.css.map",
+    "main.a05fb4b3.js.map": "/clearviewv3/static/js/main.a05fb4b3.js.map"
   },
   "entrypoints": [
     "static/css/main.6bf989f0.css",
-    "static/js/main.3d994e2a.js"
+    "static/js/main.a05fb4b3.js"
   ]
 }
