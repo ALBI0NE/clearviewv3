@@ -24,7 +24,8 @@
 .load button:hover,
 .LearnMore-btn:hover,
 .Booking-btn:hover,
-.panel-bottom button:hover {
+.panel-bottom button:hover,
+.service-card button:hover {
   background-color: var(--blue-hover);
 }
 
@@ -34,6 +35,10 @@
 .customers-section,
 .footer-section {
   margin-top: 4rem;
+}
+
+.awards-section {
+  width: 100%;
 }
 
 .nav {
@@ -283,6 +288,7 @@ header .nav-btn {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .awards-items img {
@@ -291,6 +297,59 @@ header .nav-btn {
 .carousel-item {
   width: 100%;
   height: 600px;
+}
+.carousel-item img {
+  object-fit: contain;
+  height: auto;
+  max-width: 100%;
+}
+
+.carousel-item-bg {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-pink);
+}
+.carousel-content-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.carousel-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item-bg h3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 122px;
+  line-height: 0.8;
+  color: var();
+}
+
+.carousel-item-bg p {
+  font-size: 32px;
+  margin-top: 4rem;
+  text-align: left;
+}
+
+.carousel-content-item {
+  width: 50%;
+  background-color: var(--light-pink);
+  opacity: 0.8;
+  background-image: linear-gradient(
+      135deg,
+      var(--blue-hover) 25%,
+      transparent 25%
+    ),
+    linear-gradient(225deg, var(--blue-hover) 25%, transparent 25%),
+    linear-gradient(45deg, var(--blue-hover) 25%, transparent 25%),
+    linear-gradient(315deg, var(--blue-hover) 25%, var(--light-pink) 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
 }
 
 .featured-section h2 {
@@ -476,4 +535,228 @@ header .nav-btn {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.service-container {
+  margin-top: 4rem;
+}
+
+.service-container h2 {
+  font-size: 64px;
+}
+
+.service-container p {
+  font-size: 22px;
+}
+
+.service-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+.service-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.service-card {
+  background-color: var(--light-blue);
+  height: 460px;
+  width: 580px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.service-card h3 {
+  font-size: 32px;
+}
+
+.service-card p {
+  padding: 2rem 5rem 2rem 5rem;
+  font-size: 18px;
+}
+
+.service-card button {
+  width: 250px;
+  height: 50px;
+  background-color: var(--blue);
+  border: none;
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.glasses-types {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.glasses-types-wrapper {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.glasses-type-glasses,
+.glasses-type-sunglasses,
+.glasses-type-lenses,
+.glasses-type-acessories {
+  cursor: pointer;
+}
+
+.glasses-types-wrapper h3 {
+  font-size: 28px;
+}
+
+.glasses-section {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glasses-wrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.glasses-heading {
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.glasses-item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  width: 100%;
+}
+.glasses-item {
+  width: 300px;
+  height: 300px;
+  background-color: var(--light-purple);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sunglasses-item {
+  width: 300px;
+  height: 300px;
+  background-color: var(--light-pink);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lenses-item {
+  width: 300px;
+  height: 300px;
+  background-color: var(--light-blue);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.acessories-item {
+  width: 300px;
+  height: 300px;
+  background-color: var(--light-purple);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.glasses-item-wrapper {
+  margin-bottom: 4rem;
+}
+.tips-section h2 {
+  font-size: 64px;
+}
+
+.tips-section p {
+  font-size: 22px;
+  text-align: center;
+  width: 70%;
+}
+
+.tips-section {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tips-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.tips-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.tips-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.tips-right-place {
+  display: flex;
+  justify-content: flex-end;
+  width: 55%;
+  background-color: var(--light-purple);
+}
+.tips-left-place {
+  display: flex;
+  justify-content: flex-start;
+  width: 55%;
+  background-color: var(--light-blue);
+}
+.tips {
+  height: 380px;
+}
+
+.tips h3 {
+  font-size: 44px;
+  padding: 1rem;
+  font-style: italic;
+}
+.tips-right h3,
+.tips-right p {
+  text-align: left;
+}
+.tips-left h3,
+.tips-left p {
+  text-align: right;
+}
+.tips p {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.3;
 }

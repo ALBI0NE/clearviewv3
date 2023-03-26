@@ -1,5 +1,6 @@
 import React from "react";
 import brandLogo from "../img/logotest.png";
+import twoforone from "../img/two_for_one.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -10,7 +11,6 @@ const CarouselSection = () => {
         <div className='carousel-container'>
           <Carousel
             infiniteLoop
-            autoPlay
             showArrows={false}
             showStatus={false}
             showThumbs={false}

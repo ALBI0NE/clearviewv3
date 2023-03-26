@@ -1,3 +1,11 @@
+import Footer from "../compontents/Footer";
+import ServiceCards from "../compontents/ServiceCards";
+
 export default function Services() {
-  return <h1>Services</h1>;
+  return (
+    <>
+      <ServiceCards />
+      <Footer />
+    </>
+  );
 }

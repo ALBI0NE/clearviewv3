@@ -1,3 +1,12 @@
+import Footer from "../compontents/Footer";
+import GlassesTypes from "../compontents/GlassesTypes";
+import GlassesList from "../compontents/GlassesList";
 export default function Glasses() {
-  return <h1>Glasses</h1>;
+  return (
+    <>
+      <GlassesTypes />
+      <GlassesList />
+      <Footer />
+    </>
+  );
 }
