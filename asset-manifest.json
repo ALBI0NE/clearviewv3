@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/clearviewv3/static/css/main.5795ac63.css",
-    "main.js": "/clearviewv3/static/js/main.99fedabc.js",
+    "main.css": "/clearviewv3/static/css/main.5566bc19.css",
+    "main.js": "/clearviewv3/static/js/main.623d24ce.js",
     "static/media/ukcxaAwards.png": "/clearviewv3/static/media/ukcxaAwards.9117bbaa84ff65952ef7.png",
     "static/media/doctorimage.png": "/clearviewv3/static/media/doctorimage.419c77edc23615da7e5c.png",
     "static/media/opticianAwarrds.png": "/clearviewv3/static/media/opticianAwarrds.1950e6e0536c23e51851.png",
@@ -11,11 +11,11 @@
     "static/media/logovAR1.png": "/clearviewv3/static/media/logovAR1.6c3060836eceb2256260.png",
     "static/media/herosAward.jpg": "/clearviewv3/static/media/herosAward.b93286932793092fa57f.jpg",
     "index.html": "/clearviewv3/index.html",
-    "main.5795ac63.css.map": "/clearviewv3/static/css/main.5795ac63.css.map",
-    "main.99fedabc.js.map": "/clearviewv3/static/js/main.99fedabc.js.map"
+    "main.5566bc19.css.map": "/clearviewv3/static/css/main.5566bc19.css.map",
+    "main.623d24ce.js.map": "/clearviewv3/static/js/main.623d24ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.5795ac63.css",
-    "static/js/main.99fedabc.js"
+    "static/css/main.5566bc19.css",
+    "static/js/main.623d24ce.js"
   ]
 }
