@@ -760,3 +760,126 @@ header .nav-btn {
   font-size: 18px;
   line-height: 1.3;
 }
+.contact-section {
+  margin-top: 4rem;
+}
+.contact-section h2 {
+  font-size: 64px;
+}
+.contact-wrapper {
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+}
+.contact-form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.field {
+  width: 80%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  outline: none;
+  border: 2px solid var(--light-blue);
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus {
+  background-color: #fff;
+  border: 2px solid var(--blue-hover);
+}
+.body-msg {
+  min-height: 150px;
+  resize: none;
+}
+.submit-button {
+  width: 80%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--blue);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: var(--white);
+}
+
+.submit-button:hover {
+  background-color: var(--blue-hover);
+}
+.opening-times {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.opening-times-top,
+.opening-times-bottom {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.opening-times-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.opening-content {
+  padding: 2rem;
+}
+
+.opening-time-center {
+  margin-top: 2rem;
+}
+.booking-wrapper {
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+}
+.booking-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.booking-field {
+  width: 80%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  outline: none;
+  border: 2px solid var(--light-blue);
+}
+
+.booking-field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.booking-field:focus {
+  background-color: #fff;
+  border: 2px solid var(--blue-hover);
+}
+.top-booking {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.top-booking-content {
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+}
+.title-field {
+  width: 20%;
+}
+.booking-section h2 {
+  font-size: 58px;
+}
+.booking-section p {
+  font-size: 20px;
+}

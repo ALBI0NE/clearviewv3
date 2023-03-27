@@ -23,7 +23,7 @@ const Footer = () => {
                 <li>Visit us at one of our branches!</li>
                 <div className='footer-media'>
                   <li>Phone: +44 1234 56789123</li>
-                  <li> | Email: info@clearviewoptic.com</li>
+                  <li> | Email: clearviewoptix@gmail.com</li>
                 </div>
                 <li>Follow us on social media for updates and promotions:</li>
                 <div className='footer-media'>

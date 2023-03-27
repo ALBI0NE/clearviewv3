@@ -4,6 +4,7 @@ import Services from "./pages/Services";
 import Glasses from "./pages/Glasses";
 import CareTips from "./pages/CareTips";
 import Contact from "./pages/Contact";
+import Appointments from "./pages/Appointments";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/Services' element={<Services />}></Route>
           <Route path='/Glasses' element={<Glasses />}></Route>
           <Route path='/CareTips' element={<CareTips />}></Route>
+          <Route path='/Appointments' element={<Appointments />}></Route>
           <Route path='/Contact' element={<Contact />}></Route>
         </Routes>
       </div>

@@ -1,3 +1,10 @@
+import Footer from "../compontents/Footer";
+import ContactForm from "../compontents/ContactForm";
 export default function Contact() {
-  return <h1>Contact</h1>;
+  return (
+    <>
+      <ContactForm />
+      <Footer />
+    </>
+  );
 }

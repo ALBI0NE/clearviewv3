@@ -26,6 +26,7 @@ export default function Navbar() {
             <CustomLink to='/Services'>Services</CustomLink>
             <CustomLink to='/Glasses'>Glasses</CustomLink>
             <CustomLink to='/caretips'>Care Tips</CustomLink>
+            <CustomLink to='/Appointments'>Make Booking</CustomLink>
             <CustomLink to='/contact'>Contact</CustomLink>
           </ul>
         </div>
