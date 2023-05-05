@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
-import logotest from "../img/logotest.png";
+import product1 from "../img/product1.png";
+import product2 from "../img/product2.png";
+import product3 from "../img/product3.png";
+import sunglasses1 from "../img/sunglasses.png";
+import sunglasses2 from "../img/Sunglasses2.png";
+import sunglasses3 from "../img/sunglasses3.png";
+import contact1 from "../img/contact1.png";
+import contact2 from "../img/contact2.png";
+import glassescase from "../img/case.png";
+import lensescase from "../img/lensecase.png";
+import wipes from "../img/wipes.png";
 
 const GlassesList = () => {
   const [glasses, setGlasses] = useState([]);
@@ -11,57 +21,22 @@ const GlassesList = () => {
     const listOfGlasses = [
       {
         id: 1,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
+        image: product1,
+        heading: "Designer Glasses",
+        description: "Fashionable glasses for vision and style.",
       },
       {
         id: 2,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
+        image: product2,
+        heading: "Round Glasses",
+        description:
+          "Circular lenses held by curved temples, giving a vintage style ",
       },
       {
         id: 3,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 4,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 5,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 6,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 7,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 8,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 9,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
+        image: product3,
+        heading: "Granny Glasses",
+        description: "Modern look, held by temples at the top corners",
       },
     ];
 
@@ -71,57 +46,21 @@ const GlassesList = () => {
     const listOfSungallses = [
       {
         id: 1,
-        image: logotest,
-        heading: "dsfsdfsd",
-        description: "description",
+        image: sunglasses1,
+        heading: "RayBan Glasses",
+        description: "Expensive glasses for expensive taste",
       },
       {
         id: 2,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
+        image: sunglasses2,
+        heading: "Police sunglasses",
+        description: "Fell like the best sherrif in town",
       },
       {
         id: 3,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 4,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 5,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 6,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 7,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 8,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 9,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
+        image: sunglasses3,
+        heading: "Sunset sunglasses",
+        description: "Beautiful colour sunglasses",
       },
     ];
 
@@ -131,57 +70,15 @@ const GlassesList = () => {
     const listOfAcessories = [
       {
         id: 1,
-        image: logotest,
-        heading: "dsfsdfsd",
-        description: "description",
+        image: contact1,
+        heading: "Normal contact lenses",
+        description: "Clear pack of two contact lenses",
       },
       {
         id: 2,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 3,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 4,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 5,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 6,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 7,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 8,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 9,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
+        image: contact2,
+        heading: "Orange contact lense",
+        description: "Single contact lense - orange colour",
       },
     ];
 
@@ -191,57 +88,21 @@ const GlassesList = () => {
     const listOfLenses = [
       {
         id: 1,
-        image: logotest,
-        heading: "dsfsdfsd",
-        description: "description",
+        image: glassescase,
+        heading: "Case for glasses",
+        description: "Stylish case to keep glasses safe",
       },
       {
         id: 2,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
+        image: lensescase,
+        heading: "Case for lenses",
+        description: "Kepp your contacts safe",
       },
       {
         id: 3,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 4,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 5,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 6,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 7,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 8,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
-      },
-      {
-        id: 9,
-        image: logotest,
-        heading: "NAME",
-        description: "description",
+        image: wipes,
+        heading: "Wipes",
+        description: "Best wipes for glasses",
       },
     ];
 

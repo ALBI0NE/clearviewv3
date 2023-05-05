@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import doctorimg from "../img/doctorimage.png";
 
 export default function HomeHeader() {
@@ -19,8 +20,12 @@ export default function HomeHeader() {
           your eyesight and entrust your vision to our skilled professionals.
         </p>
         <div className='button-section'>
-          <button className='LearnMore-btn'>LEARN MORE</button>
-          <button className='Booking-btn'>BOOK AN APPOINTMENT</button>
+          <CustomLink to='/services'>
+            <button className='LearnMore-btn'>LEARN MORE</button>
+          </CustomLink>
+          <CustomLink to='/appointments'>
+            <button className='Booking-btn'>BOOK AN APPOINTMENT</button>
+          </CustomLink>
         </div>
       </div>
       <div className='right-section'>
@@ -32,4 +37,15 @@ export default function HomeHeader() {
       </div>
     </div>
   );
+  function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+    return (
+      <li className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </li>
+    );
+  }
 }

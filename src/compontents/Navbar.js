@@ -1,13 +1,14 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import React from "react";
-import logo from "../img/logovAR1.png";
 import { useRef } from "react";
+import logo from "../img/logovAR1.png";
 
 export default function Navbar() {
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
+  const isOpen = isStoreOpen();
 
   return (
     <header>
@@ -28,6 +29,9 @@ export default function Navbar() {
             <CustomLink to='/caretips'>Care Tips</CustomLink>
             <CustomLink to='/Appointments'>Make Booking</CustomLink>
             <CustomLink to='/contact'>Contact</CustomLink>
+            <span className='store-status'>
+              Store is: {isOpen ? "Open" : "Closed"}
+            </span>
           </ul>
         </div>
       </nav>
@@ -41,6 +45,7 @@ export default function Navbar() {
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
   return (
     <li className={isActive ? "active" : ""}>
       <Link to={to} {...props}>
@@ -48,4 +53,20 @@ function CustomLink({ to, children, ...props }) {
       </Link>
     </li>
   );
+}
+function isStoreOpen() {
+  const now = new Date();
+  const dayOfWeek = now.getDay();
+  const hour = now.getHours();
+
+  if (dayOfWeek === 0) {
+    // Sunday
+    return false;
+  } else if (dayOfWeek === 6) {
+    // Saturday
+    return hour >= 9 && hour < 13;
+  } else {
+    // Weekdays
+    return hour >= 9 && hour < 17.5;
+  }
 }

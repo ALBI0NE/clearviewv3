@@ -1,6 +1,7 @@
 import { Search } from "react-bootstrap-icons";
 import { Eyeglasses } from "react-bootstrap-icons";
 import { Eye } from "react-bootstrap-icons";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 export default function WhyChoose() {
   return (
     <div className='reasons-section'>
@@ -25,7 +26,9 @@ export default function WhyChoose() {
                 </p>
               </div>
               <div className='panel-bottom'>
-                <button>LEARN MORE</button>
+                <CustomLink to='/services'>
+                  <button>LEARN MORE</button>
+                </CustomLink>
               </div>
             </div>
           </div>
@@ -46,7 +49,9 @@ export default function WhyChoose() {
                 </p>
               </div>
               <div className='panel-bottom'>
-                <button>LEARN MORE</button>
+                <CustomLink to='/services'>
+                  <button>LEARN MORE</button>
+                </CustomLink>
               </div>
             </div>
           </div>
@@ -68,7 +73,9 @@ export default function WhyChoose() {
                 </p>
               </div>
               <div className='panel-bottom'>
-                <button>LEARN MORE</button>
+                <CustomLink to='/services'>
+                  <button>LEARN MORE</button>
+                </CustomLink>
               </div>
             </div>
           </div>
@@ -76,4 +83,15 @@ export default function WhyChoose() {
       </div>
     </div>
   );
+  function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+    return (
+      <li className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </li>
+    );
+  }
 }
